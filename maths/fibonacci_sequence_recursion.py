@@ -12,7 +12,8 @@ def recur_fibo(n):
 def main():
     limit = int(input("How many terms to include in fibonacci series: "))
     if limit > 0:
-        print(f"The first {limit} terms of the fibonacci series are as follows:")
+        print(
+            f"The first {limit} terms of the fibonacci series are as follows:")
         print([recur_fibo(n) for n in range(limit)])
     else:
         print("Please enter a positive integer: ")
@@ -20,3 +21,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+print(main())

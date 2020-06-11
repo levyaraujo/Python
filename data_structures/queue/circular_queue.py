@@ -45,7 +45,8 @@ class CircularQueue:
 
     def enqueue(self, data):
         """
-        This function insert an element in the queue using self.rear value as an index
+        This function insert an element in the queue using self.
+        rear value as an index
         >>> cq = CircularQueue(5)
         >>> cq.enqueue("A")  # doctest: +ELLIPSIS
         <circular_queue.CircularQueue object at ...
@@ -66,7 +67,8 @@ class CircularQueue:
 
     def dequeue(self):
         """
-        This function removes an element from the queue using on self.front value as an
+        This function removes an element from the queue using on self.
+        front value as an
         index
         >>> cq = CircularQueue(5)
         >>> cq.dequeue()
@@ -92,3 +94,6 @@ class CircularQueue:
         self.front = (self.front + 1) % self.n
         self.size -= 1
         return temp
+
+
+print(CircularQueue(1))
